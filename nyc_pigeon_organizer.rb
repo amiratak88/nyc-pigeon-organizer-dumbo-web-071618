@@ -1,13 +1,7 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
   arr = []
-  data.each do |k , v|
-    v.each do |k1, v1|
-      v1.each do |el|
-        arr << el
-      end
-    end
-  end
+  data[:gender].map{|key, name| name}
   arr.uniq!
   hash = {}
   arr.each do |el|
