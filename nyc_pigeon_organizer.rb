@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
   #arr = []
-  arr = data[:gender].map{|key, name| name}
+  arr = data[:gender].map{|key, name| name}.flatten
   #arr.uniq!
   hash = {}
   arr.each do |el|
